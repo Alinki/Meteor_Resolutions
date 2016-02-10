@@ -1,0 +1,18 @@
+<head>
+    <title>Resolutions</title>
+</head>
+
+<body>
+<h1>Welcome to a list of your resolutions!</h1>
+<ul>
+    {{#each Resolutions}}
+
+        {{> resolution}}
+
+    {{/each}}
+</ul>
+</body>
+
+<template name="resolution">
+    <li> {{title}} </li>
+</template>
